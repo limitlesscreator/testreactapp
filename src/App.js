@@ -3,7 +3,7 @@ import './App.css';
 
 function App() {
   return (
-    <div className="wrapperFrom V">
+    <div className="wrapper_from_Ann wrapperFrom V">
       redux 2
         new
         sass
@@ -12,9 +12,9 @@ function App() {
       fitcha mine
 
 
+        export default App;
+
         Vladislav test
     </div>
   );
 }
-
-export default App;
