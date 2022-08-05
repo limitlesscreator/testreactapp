@@ -3,7 +3,7 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
+    <div className="wrapper_from_Ann">
       redux 2
         new
         sass
