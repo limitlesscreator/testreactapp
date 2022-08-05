@@ -3,13 +3,16 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
+    <div className="wrapperFrom V">
       redux 2
         new
         sass
         test
 
       fitcha mine
+
+
+        Vladislav test
     </div>
   );
 }
