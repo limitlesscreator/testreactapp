@@ -8,6 +8,8 @@ function App() {
         new
         sass
         test
+
+      fitcha mine
     </div>
   );
 }
