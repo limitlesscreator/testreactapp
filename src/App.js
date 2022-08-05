@@ -4,7 +4,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      redux
+      redux 2
         new
         sass
         test
