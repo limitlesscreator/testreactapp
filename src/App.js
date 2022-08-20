@@ -1,20 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react'
+import {Counter} from "./ClassComponents/Counter";
+import {SecondCounter} from "./ClassComponents/SecondCounter";
+import {Shop} from "./Portals/Shop";
 
-function App() {
-  return (
-    <div className="wrapper_from_Ann wrapperFrom V">
-      redux 2
-        new
-        sass
-        test
-
-      fitcha mine
-
-
-        export default App;
-
-        Vladislav test
+export class App extends React.Component{
+  render(){
+    return <div>
+      {/*<button onClick={this.mountCounter} disabled={this.state.mount}>Mount</button>*/}
+      {/*<button onClick={this.unmountCounter} disabled={!this.state.mount}>Unount</button>*/}
+      {/*{this.state.mount ? <Counter/> : null}*/}
+      {/*<Counter/>*/}
+      {/*<SecondCounter/>*/}
+      <Shop/>
     </div>
-  );
+  }
 }
