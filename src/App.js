@@ -1,18 +1,35 @@
 import './App.css';
-import React from 'react'
+import React, {useEffect, useState} from 'react'
+import {Refs} from "./Refs/Refs";
+import car from '../src/img/car.jpg'
+import {ChildComponent} from "./ClassComponents/childComponent";
+import {SomeChild} from "./SomeChild";
+import {Virtualize} from "./Virtualize/Virtualize";
 import {Counter} from "./ClassComponents/Counter";
-import {SecondCounter} from "./ClassComponents/SecondCounter";
-import {Shop} from "./Portals/Shop";
 
-export class App extends React.Component{
-  render(){
-    return <div>
-      {/*<button onClick={this.mountCounter} disabled={this.state.mount}>Mount</button>*/}
-      {/*<button onClick={this.unmountCounter} disabled={!this.state.mount}>Unount</button>*/}
-      {/*{this.state.mount ? <Counter/> : null}*/}
-      {/*<Counter/>*/}
-      {/*<SecondCounter/>*/}
-      <Shop/>
-    </div>
-  }
+import {connect, useDispatch, useSelector} from "react-redux";
+import {CounterReduce} from "./Hooks/useReducer/counterReduce";
+import NewCounter from "./Redux/NewCounter";
+
+
+
+export function App() {
+    // const numberOfCounter = useSelector(state => state.count)
+    const dispatch = useDispatch()
+
+
+    return (
+        <div >
+
+            <br/>
+            <NewCounter name={'Vova'}/>
+            {/*<button onClick={() => dispatch({type: "INC_COUNTER"})}>+</button>*/}
+            {/*<br/>*/}
+            {/*<button onClick={() => fetchPosts()}>fetch users</button>*/}
+
+            {/*<CounterReduce/>*/}
+        </div>
+
+    )
+
 }

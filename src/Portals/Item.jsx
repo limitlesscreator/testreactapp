@@ -39,6 +39,7 @@ export class Item extends React.Component {
                     this.state.descriptionVisible
                         ? <Description price={price} desc={desc} /> : null
                 }
+                <div className={s.circle}></div>
             </div>
         )
     }

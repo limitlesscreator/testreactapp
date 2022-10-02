@@ -47,6 +47,16 @@ h1 {
   margin-bottom: 30px;
 }
 
+.circle{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: deeppink;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
 .image {
   width: 100%;
   position: absolute;

@@ -10,32 +10,31 @@ export class Counter extends React.Component{
             someFalseOrTrue: false
         }
 
-        this.increment = () => {
-            this.setState((prevState) => (
-                {count: prevState.count + 1}
-            ))
-            this.setState((prevState) => (
-                {count: prevState.count + 1}
-            ))
-        }
+
         this.changeParent = () => {
             this.setState({someFalseOrTrue: !this.state.someFalseOrTrue})
             console.log(this.state.someFalseOrTrue)
         }
+
+        // this.increment = this.increment.bind(this)
     }
-    // shouldComponentUpdate(nextProps,nextState){
-    //     if (this.state.count > 10){
-    //         return false
-    //     }
-    //     else return true
-    // }
+
+    increment = (e) => {
+        console.log(e)
+        this.setState((prevState) => (
+            {count: prevState.count + 1}
+        ))
+        this.setState((prevState) => (
+            {count: prevState.count + 1}
+        ))
+    }
 
     render(){
         return(
             <div>
-                <button onClick={() => this.increment()}>{this.state.count}</button>
-                <button onClick={() => this.changeParent()}>change Parent</button>
-                <ChildComponent count={this.state.count}/>
+                <button onClick={this.increment}>{this.state.count}</button>
+                {/*<button onClick={() => this.changeParent()}>change Parent</button>*/}
+                {/*<ChildComponent count={this.state.count}/>*/}
             </div>
         )
     }
